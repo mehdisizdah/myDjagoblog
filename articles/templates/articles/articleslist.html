@@ -7,11 +7,13 @@
     <link rel="stylesheet" href="{%  static 'styles.css'%}"><!--#ajibanGhariba: CSS(huruf bozorg) background ra ghermez mikonad  -->
  </head>
   <body>
-<h1>   لیست مقالات استاد بزرگ اقا مهدی شفقتی</h1>
-  {%for narticle in articless %}
-  <h4><a href="#">{{narticle.title}}</a></h4>
-  <p>{{narticle.snippetttt}}</p>
-  <p>{{narticle.date}}</p>
-  {%endfor %}
+    <div class="container">
+      <h1>   لیست مقالات استاد بزرگ اقا مهدی شفقتی</h1>
+        {%for narticle in articless %}
+        <h4><a href="#">{{narticle.title}}</a></h4>
+        <p>{{narticle.snippetttt}}</p>
+        <p>{{narticle.date}}</p>
+        {%endfor %}  
+    </div >
   </body>
 </html>
